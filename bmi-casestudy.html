@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator Case Study</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf0;
+      color: #2d3748;
+    }
+
+    .section-heading {
+      font-weight: 600;
+      color: #dd6b20;
+      margin-bottom: 1rem;
+    }
+
+    .case-section {
+      padding: 60px 20px;
+    }
+
+    .section-light {
+      background-color: #fffaf0;
+    }
+
+    .section-orange {
+      background-color: #fef3c7;
+    }
+
+    .section-dark {
+      background-color: #fefae0;
+    }
+
+    .case-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #dd6b20;
+      color: white;
+    }
+
+    .navbar {
+      background-color: #dd6b20;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffe4b5 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">JohnE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="#Contact">Contact</a>
+            <a class="nav-link" href="casestudy.html">Case Study</a>
+            <a class="nav-link" href="#About">About</a>
+            <a class="nav-link" href="plantidentifier.html">Plant Identifier</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Header Section -->
+  <section class="case-section section-light text-center">
+    <div class="container">
+      <h1 class="mb-4">BMI Index Calculator (Java GUI)</h1>
+      <img src="318b850e-5881-41c7-bbef-37a3afc18025_1.0f1dae675dd442eafad0b0ad277586e4.jpeg" alt="BMI Calculator GUI" class="case-img mb-4">
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="case-section section-orange">
+    <div class="container">
+      <h3 class="section-heading">Overview</h3>
+      <p>
+        The BMI Index Calculator is a desktop Java GUI application I built to give users an easy and interactive way to assess their body mass index and understand the implications on personal health. 
+        The application calculates BMI based on user-provided height and weight and returns a health category based on standard BMI ranges.
+        <br><br>
+        My goal was to create a tool that didn’t just compute a number but offered instant feedback through a clean and friendly user interface. The calculator was built as part of my early Java learning journey and introduced me to core concepts in UI design, input validation, and user feedback in real-time.
+      </p>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="case-section section-light text-center">
+    <div class="container">
+      <h3 class="section-heading">Preview</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <img src="IMG_8620.jpg" alt="User input for weight and height" class="case-img">
+          <p class="mt-2">User enters height and weight in text fields</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="IMG_8612.jpg" alt="BMI result shown" class="case-img">
+          <p class="mt-2">BMI value and category displayed instantly</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="IMG_8619.jpg" alt="Error validation" class="case-img">
+          <p class="mt-2">Error message shown for invalid input</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section class="case-section section-light">
+    <div class="container">
+      <h3 class="section-heading"> Tools & Technologies</h3>
+      <ul>
+        <li><strong>Java:</strong> Used for full backend and UI logic and GUI development</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="case-section section-dark">
+    <div class="container">
+      <h3 class="section-heading">Features</h3>
+      <ul>
+        <li><strong>User Input:</strong> Accepts height and weight from users</li>
+        <li><strong>Live Calculation:</strong> Calculates BMI and displays category immediately</li>
+        <li><strong>Clean UI:</strong> Minimal, intuitive design</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Challenges -->
+  <section class="case-section section-orange">
+    <div class="container">
+      <h3 class="section-heading">Challenges & Solutions</h3>
+      <p>
+        One major challenge was handling edge cases and invalid user input, such as entering letters instead of numbers, leaving fields empty, or dividing by zero when height was entered as 0.
+        To solve this, I implemented input validation logic to check if values were numerical and positive before proceeding with any calculations.
+    </div>
+  </section>
+
+  <!-- Reflections -->
+  <section class="case-section section-dark">
+    <div class="container">
+      <h3 class="section-heading">Reflections</h3>
+      <p>
+        Building this application was a significant milestone in my learning journey. It was my first real GUI-based program, and it pushed me to think beyond just writing code—it made me consider the user experience, anticipate edge cases, and write logic that gracefully handles unexpected scenarios.
+        <br><br>
+        I also learned the importance of keeping UI feedback clear and instant. Rather than just showing raw numbers, I used labels and conditional messages to communicate meaningfully with the user. This small project helped me understand what it takes to move from logic-only development to user-centered design—an important mindset I now carry into every app I build.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p class="mb-0">© 2025 John Ebaid</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
